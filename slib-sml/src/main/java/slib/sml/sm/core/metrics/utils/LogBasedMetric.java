@@ -58,6 +58,7 @@ public class LogBasedMetric implements LogBasedMetricInterface{
     @Override
     public void setLogBase(Conf conf) throws SLIB_Ex_Critic {
         if (conf.containsParam(SMParams.LOG_BASE.toString())) {
+        	System.out.println("AARON!!!!" + conf.getParamAsDouble(SMParams.LOG_BASE.toString()));
             logbase = conf.getParamAsDouble(SMParams.LOG_BASE.toString());
         }
     }

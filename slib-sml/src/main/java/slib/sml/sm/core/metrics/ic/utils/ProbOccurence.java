@@ -61,7 +61,10 @@ public class ProbOccurence implements ICtopo {
         // we add to the max the number of occurrences added to each nodes
 
         max += addToOccurrence;
-
+        for(URI u : nbOccurrence.keySet()) {
+        	if(u.toString().contains("0003674"))
+        	System.out.println("AARON!!! " +nbOccurrence.get(u));
+        }
         double prob_occ;
 
         for (URI v : nbOccurrence.keySet()) {
